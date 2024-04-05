@@ -15,11 +15,9 @@ output {
   color: var(--color-brand-1);
 }
 
-/* Selecionando o elemento input range (selecione por id ou classe) */
 input[type="range"] {
   cursor: pointer;
   width: 100%;
-  outline: none;
   background-color: var(--color-brand-1);
   border-radius: 0.5rem;
   height: 0.5rem;
@@ -27,16 +25,17 @@ input[type="range"] {
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 30px;
-  width: 30px;
+  appearance: none;
+  height: 1.875rem;
+  width: 1.875rem;
   background-color: #fff;
   border-radius: 50%;
   border: 0.5rem solid var(--color-brand-1);
 }
 
 input[type="range"]::-moz-range-thumb {
-  height: 14px;
-  width: 14px;
+  height: 0.875rem;
+  width: 0.875rem;
   background-color: #fff;
   border-radius: 50%;
   border: 0.5rem solid var(--color-brand-1);
