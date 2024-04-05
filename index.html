@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Open Music</title>
-    <link rel="stylesheet" href="src/styles/index.css" />
+    <link rel="stylesheet" href="src/styles/index.css"/>
     <script type="module" src="src/scripts/index.js"></script>
   </head>
   <body>
@@ -14,18 +14,43 @@
     </header>
 
     <main>
-      <section>
+      <section class="genres">
         <h2>Gênero Musical</h2>
         <ul>
-          <li>Todos</li>
-          <li>Pop</li>
-          <li>MPB</li>
-          <li>Samba</li>
-          <li>Forró</li>
-          <li>Todos</li>
-          <li>Baião</li>
-          <li>Rap</li>
-          <li>Hip-Hop</li>
+          <li>
+            <input checked type="radio" name="genre" id="genre-0"/>
+            <label for="genre-0">Todos </label>
+          </li>
+          <li>
+            <input type="radio" name="genre" id="genre-1"/>
+            <label for="genre-1">Pop</label>
+          </li>
+          <li>
+            <input type="radio" name="genre" id="genre-2"/>
+            <label for="genre-2">MPB</label>
+          </li>
+          <li>
+            <input type="radio" name="genre" id="genre-3"/>
+            <label for="genre-3">Forró</label>
+          </li>
+
+          <li>
+            <input type="radio" name="genre" id="genre-4"/>
+            <label for="genre-4">Samba</label>
+          </li>
+
+          <li>
+            <input type="radio" name="genre" id="genre-5"/>
+            <label for="genre-5">Baião</label>
+          </li>
+          <li>
+            <input type="radio" name="genre" id="genre-6"/>
+            <label for="genre-6">Rap</label>
+          </li>
+          <li>
+            <input type="radio" name="genre" id="genre-7"/>
+            <label for="genre-7">Hip-Hop</label>
+          </li>
         </ul>
       </section>
 
@@ -37,13 +62,14 @@
             <output>R$ 100</output>
           </p>
         </div>
-        <input type="range" />
+        <input type="range"/>
       </section>
 
       <section>
+        <h2>Álbuns Encontrados</h2>
         <ul>
           <li>
-            <img src="src/assets/imgs/cover-1.png" alt="Acabou o Chorare" />
+            <img src="src/assets/imgs/cover-1.png" alt="Acabou o Chorare"/>
             <h3>Acabou o Chorare</h3>
             <div>
               <p>Novos Baianos</p>
@@ -56,7 +82,7 @@
             </div>
           </li>
           <li>
-            <img src="src/assets/imgs/cover-2.png" alt="The Wall" />
+            <img src="src/assets/imgs/cover-2.png" alt="The Wall"/>
             <h3>The Wall</h3>
             <div>
               <p>Pink Floyd</p>
@@ -69,7 +95,7 @@
             </div>
           </li>
           <li>
-            <img src="src/assets/imgs/cover-1.png" alt="To Pimp a Butterfly" />
+            <img src="src/assets/imgs/cover-1.png" alt="To Pimp a Butterfly"/>
             <h3>To Pimp a Butterfly</h3>
             <div>
               <p>Kendrick Lamar</p>
@@ -82,7 +108,7 @@
             </div>
           </li>
           <li>
-            <img src="src/assets/imgs/cover-2.png" alt="The Wall" />
+            <img src="src/assets/imgs/cover-2.png" alt="The Wall"/>
             <h3>The Wall</h3>
             <div>
               <p>Pink Floyd</p>
@@ -95,7 +121,7 @@
             </div>
           </li>
           <li>
-            <img src="src/assets/imgs/cover-1.png" alt="Acabou o Chorare" />
+            <img src="src/assets/imgs/cover-1.png" alt="Acabou o Chorare"/>
             <h3>Acabou o Chorare</h3>
             <div>
               <p>Novos Baianos</p>
@@ -108,7 +134,7 @@
             </div>
           </li>
           <li>
-            <img src="src/assets/imgs/cover-1.png" alt="To Pimp a Butterfly" />
+            <img src="src/assets/imgs/cover-1.png" alt="To Pimp a Butterfly"/>
             <h3>To Pimp a Butterfly</h3>
             <div>
               <p>Kendrick Lamar</p>

@@ -25,6 +25,15 @@ body {
   margin: 0 auto;
 }
 
-button {
+button,
+li label {
   cursor: pointer;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.813rem;
+  font-weight: 600;
+
+  padding: 1rem 0;
 }

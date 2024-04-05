@@ -1,1 +1,28 @@
-/* Genres Styles */
+.genres {
+  margin: 1rem 0;
+}
+
+.genres ul {
+  display: flex;
+  align-items: center;
+  gap: 1.56rem;
+
+  padding: 1rem 0;
+}
+
+li label {
+  padding: 0.6375rem 0.7rem;
+  border-radius: 0.25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-gray-3);
+  background: var(--color-gray-6);
+}
+
+input:checked + label {
+  color: var(--color-gray-7);
+  background: var(--color-gray-2);
+}
