@@ -1,1 +1,26 @@
-/* Header Styles */
+header {
+  height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 0.1875rem solid var(--color-brand-2);
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+h1 span {
+  color: var(--color-brand-1);
+}
+
+header button {
+  width: 2.75rem;
+  height: 2.25rem;
+  border-radius: 0.3125rem;
+  padding: 0.5625rem 0.875rem;
+  background: center no-repeat url("../assets/icons/moon.svg") var(--color-gray-6);
+}

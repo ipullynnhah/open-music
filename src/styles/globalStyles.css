@@ -15,11 +15,16 @@
 }
 
 body {
-  width: 64rem;
+  width: 90vw;
+  max-width: 64rem;
 
   font-family: "Inter", sans-serif;
   color: var(--color-gray-2);
   background: var(--color-gray-8);
 
   margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
 }
