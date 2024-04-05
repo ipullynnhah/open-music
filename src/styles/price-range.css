@@ -1,1 +1,43 @@
-/* Price Range Styles */
+.range div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.range p {
+  font-size: 1.375rem;
+  line-height: 1.688rem;
+  font-weight: 600;
+}
+
+output {
+  color: var(--color-brand-1);
+}
+
+/* Selecionando o elemento input range (selecione por id ou classe) */
+input[type="range"] {
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  background-color: var(--color-brand-1);
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.5rem solid var(--color-brand-1);
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.5rem solid var(--color-brand-1);
+}
