@@ -5,6 +5,9 @@ header {
   align-items: center;
 
   border-bottom: 0.1875rem solid var(--color-brand-2);
+  background: var(--color-gray-8);
+  position: sticky;
+  top: 0;
 }
 
 h1 {
