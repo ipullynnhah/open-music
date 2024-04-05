@@ -25,5 +25,10 @@ header button {
   height: 2.25rem;
   border-radius: 0.3125rem;
   padding: 0.5625rem 0.875rem;
-  background: center no-repeat url("../assets/icons/moon.svg") var(--color-gray-6);
+  background: center no-repeat url("../assets/icons/moon.svg")
+    var(--color-gray-6);
+}
+
+header button:hover {
+  background-color: var(--color-gray-5);
 }

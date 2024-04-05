@@ -5,14 +5,15 @@
 .genres ul {
   display: flex;
   align-items: center;
-  gap: 1.56rem;
-
+  column-gap: 1.56rem;
+  overflow: scroll;
   padding: 1rem 0;
 }
 
 li label {
   padding: 0.6375rem 0.7rem;
   border-radius: 0.25rem;
+  white-space: nowrap;
 
   display: flex;
   justify-content: center;
@@ -20,6 +21,10 @@ li label {
 
   color: var(--color-gray-3);
   background: var(--color-gray-6);
+}
+
+label:hover {
+  outline: 0.0625rem solid var(--color-gray-2);
 }
 
 input:checked + label {

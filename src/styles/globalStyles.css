@@ -30,10 +30,14 @@ li label {
   cursor: pointer;
 }
 
+button {
+  transition: background 300ms;
+}
+
 h2 {
   font-size: 1.5rem;
   line-height: 1.813rem;
   font-weight: 600;
 
-  padding: 1rem 0;
+  margin: 1rem 0;
 }
