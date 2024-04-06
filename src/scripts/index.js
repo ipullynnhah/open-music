@@ -1,5 +1,5 @@
 import { applyInputRangeStyle } from "./inputRange.js";
-import {albumList} from "./albumsDatabase.js";
+import { albumList } from "./albumsDatabase.js";
 
 function createAlbumCard({ title, genre, band, price, img }) {
   return `<li>
@@ -21,7 +21,10 @@ function createAlbumCard({ title, genre, band, price, img }) {
 }
 
 function renderAlbums(albums) {
-  genreUl.innerHTML = albums.reduce((ac, album)=> ac + createAlbumCard(album), "");
+  genreUl.innerHTML = albums.reduce(
+    (ac, album) => ac + createAlbumCard(album),
+    "",
+  );
 }
 
 const genreUl = document.querySelector(".albums ul");
