@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Music</title>
     <link rel="stylesheet" href="src/styles/index.css" />
-    <script type="module" src="src/scripts/index.js"></script>
+    <script type="module" src="src/scripts/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -62,7 +62,7 @@
             <output>R$ 100</output>
           </p>
         </div>
-        <input type="range" min="0" value="100" max="200" />
+        <input id="price-range" type="range" min="0" value="200" max="200" />
       </section>
 
       <section class="albums">
