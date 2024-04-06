@@ -29,8 +29,9 @@ label:hover {
 }
 
 input:checked + label {
-  color: var(--color-gray-2);
-  background: var(--color-gray-6);
+  color: var(--color-gray-7);
+  background: var(--color-gray-2);
+  border-color: var(--color-gray-2);
 }
 
 .dark-mode label {
@@ -41,4 +42,10 @@ input:checked + label {
 
 .dark-mode label:hover {
   border-color: var(--color-brand-2);
+}
+
+.dark-mode input:checked + label {
+  color: var(--color-gray-2);
+  background: var(--color-gray-6);
+  border-color: var(--color-gray-6);
 }
