@@ -1,7 +1,7 @@
-import { albumList } from "./albumsDatabase.js";
 import { renderAlbums } from "./albums.js";
 import { configThemeBtn } from "./theme.js";
 import { applyInputRangeStyle } from "./inputRange.js";
+import { fetchMusics } from "./api.js";
 
 export const configRange = () => {
   const output = document.querySelector("output span");
@@ -19,7 +19,10 @@ if (theme === "dark") {
   document.body.classList.toggle("dark-mode");
 }
 
+const albumList = await fetchMusics();
+
 configThemeBtn();
 configRange();
 applyInputRangeStyle();
+
 renderAlbums(albumList);
