@@ -1,33 +1,25 @@
-import { applyInputRangeStyle } from "./inputRange.js";
 import { albumList } from "./albumsDatabase.js";
+import { renderAlbums } from "./albums.js";
+import { configThemeBtn } from "./theme.js";
+import { applyInputRangeStyle } from "./inputRange.js";
 
-function createAlbumCard({ title, genre, band, price, img }) {
-  return `<li>
-  <img src="${img}" alt="${title}"/>
-  <div class="card-container">
-    <h3>${title}</h3>
-    <div>
-      <p class="band">${band}</p>
-      <p class="genre">${genre}</p>
-    </div>
+export const configRange = () => {
+  const output = document.querySelector("output span");
+  const range = document.querySelector("input[type='range']");
+  output.innerText = range.value;
 
-    <div>
-      <p class="price">R$ ${price.replace(".", ",")}</p>
-      <button>Comprar</button>
-    </div>
-  </div>
-</li>
-`;
+  range.addEventListener("input", () => {
+    output.innerText = range.value;
+    renderAlbums(albumList.filter(album => album.price <= +range.value));
+  });
+};
+
+const theme = localStorage.getItem("@openMusic:theme");
+if (theme === "dark") {
+  document.body.classList.toggle("dark-mode");
 }
 
-function renderAlbums(albums) {
-  genreUl.innerHTML = albums.reduce(
-    (ac, album) => ac + createAlbumCard(album),
-    ""
-  );
-}
-
-const genreUl = document.querySelector(".albums ul");
-
+configThemeBtn();
+configRange();
 applyInputRangeStyle();
 renderAlbums(albumList);

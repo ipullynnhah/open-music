@@ -41,7 +41,6 @@ input[type="range"]::-moz-range-thumb {
   border: 0.5rem solid var(--color-brand-1);
 }
 
-
 .dark-mode output {
   color: var(--color-brand-2);
 }
