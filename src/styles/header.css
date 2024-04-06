@@ -32,3 +32,21 @@ header button {
 header button:hover {
   background-color: var(--color-gray-5);
 }
+
+.dark-mode header {
+  border-bottom: 0.1875rem solid var(--color-brand-1);
+  background: var(--color-gray-1);
+}
+
+.dark-mode h1 span {
+  color: var(--color-brand-2);
+}
+
+.dark-mode header button {
+  background: center no-repeat url("../assets/icons/sun.svg")
+    var(--color-gray-3);
+}
+
+.dark-mode header button:hover {
+  background-color: var(--color-gray-2);
+}

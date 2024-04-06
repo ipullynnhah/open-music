@@ -41,3 +41,9 @@ h2 {
 
   margin: 1rem 0;
 }
+
+
+body.dark-mode {
+  color: var(--color-gray-7);
+  background-color: var(--color-gray-1);
+}

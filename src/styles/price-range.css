@@ -40,3 +40,17 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   border: 0.5rem solid var(--color-brand-1);
 }
+
+
+.dark-mode output {
+  color: var(--color-brand-2);
+}
+
+.dark-mode input[type="range"] {
+  background-color: var(--color-brand-2);
+}
+
+.dark-mode input[type="range"]::-webkit-slider-thumb,
+.dark-mode input[type="range"]::-moz-range-thumb {
+  border-color: var(--color-brand-2);
+}

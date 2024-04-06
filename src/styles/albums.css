@@ -77,4 +77,28 @@ h3 {
 
 .card-container button:hover {
   background: var(--color-brand-1);
+  border-color: var(--color-brand-1);
+}
+
+.dark-mode .albums li {
+  background: var(--color-gray-2);
+}
+
+.dark-mode .albums li:hover {
+  background: var(--color-gray-3);
+}
+
+.dark-mode .band,
+.dark-mode .genre {
+  color: var(--color-gray-6);
+}
+
+.dark-mode .card-container button {
+  background: var(--color-brand-2);
+  border: 0.0625rem solid var(--color-brand-2);
+}
+
+.dark-mode .card-container button:hover {
+  background: var(--color-brand-1);
+  border-color: var(--color-brand-1);
 }
