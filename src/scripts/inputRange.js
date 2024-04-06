@@ -1,7 +1,7 @@
 export function applyInputRangeStyle() {
   const inputRange = document.getElementById("price-range");
 
-  inputRange.addEventListener("input", (event) => {
+  inputRange.addEventListener("input", event => {
     const currentInputValue = event.target.value;
     const runnableTrackProgress = (currentInputValue / inputRange.max) * 100;
 

@@ -23,7 +23,7 @@ function createAlbumCard({ title, genre, band, price, img }) {
 function renderAlbums(albums) {
   genreUl.innerHTML = albums.reduce(
     (ac, album) => ac + createAlbumCard(album),
-    "",
+    ""
   );
 }
 
