@@ -19,10 +19,10 @@ const createAlbumCard = ({ title, genre, band, price, img }) => {
 };
 
 export const renderAlbums = albums => {
-  genreUl.innerHTML = albums.reduce(
+  albumUl.innerHTML = albums.reduce(
     (ac, album) => ac + createAlbumCard(album),
     ""
   );
 };
 
-const genreUl = document.querySelector(".albums ul");
+const albumUl = document.querySelector(".albums ul");
