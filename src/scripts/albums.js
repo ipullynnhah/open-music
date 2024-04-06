@@ -19,7 +19,6 @@ const createAlbumCard = ({ title, genre, band, price, img }) => {
 };
 
 export const renderAlbums = albums => {
-  console.log(albums);
   albumUl.innerHTML = albums.reduce(
     (ac, album) => ac + createAlbumCard(album),
     ""
